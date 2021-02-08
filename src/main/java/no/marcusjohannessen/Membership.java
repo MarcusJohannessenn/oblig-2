@@ -1,6 +1,6 @@
 package no.marcusjohannessen;
 
-public class Membership {
+public abstract class Membership {
     private String membershipName;
 
     //Har egentlig ikke noe å si her at den settes som protected
