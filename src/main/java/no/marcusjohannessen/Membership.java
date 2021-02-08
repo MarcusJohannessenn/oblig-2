@@ -3,7 +3,9 @@ package no.marcusjohannessen;
 public class Membership {
     private String membershipName;
 
-    public Membership(String membershipName){
+    //Har egentlig ikke noe å si her at den settes som protected
+    //fordi alle klassene i denne oppgaven er i samme pakke (no.marcusjohannessen)
+    protected Membership(String membershipName){
         this.membershipName = membershipName;
     }
 

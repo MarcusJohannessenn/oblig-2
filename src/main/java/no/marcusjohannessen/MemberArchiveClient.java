@@ -30,7 +30,7 @@ public class MemberArchiveClient {
         memberArchive.addMember(memb);
         memberArchive.registerPoints(23,50000);
 
-        System.out.println("Now lets see the register:\n");
+        System.out.println("\nNow lets see the register:\n");
         memberArchive.listAllMembers();
 
 

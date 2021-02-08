@@ -2,7 +2,7 @@ package no.marcusjohannessen;
 
 public class BasicMembership extends Membership{
 
-    public BasicMembership(){
+    protected BasicMembership(){
         super("Basic");
     }
 

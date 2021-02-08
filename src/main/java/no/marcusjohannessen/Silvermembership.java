@@ -3,7 +3,8 @@ package no.marcusjohannessen;
 public class Silvermembership extends Membership {
     private final float POINTS_SCALING_FACTORE;
 
-    public Silvermembership() {
+    //Protected slik at bare klassene i samme
+    protected Silvermembership() {
         super("Silver");
         this.POINTS_SCALING_FACTORE = 1.2f;
     }
