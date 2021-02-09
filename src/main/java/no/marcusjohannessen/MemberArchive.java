@@ -76,6 +76,7 @@ public class MemberArchive {
         return -1;
     }
 
+
     /**
      * Fills the register with some arbitrary members, for testing purposes.
      */

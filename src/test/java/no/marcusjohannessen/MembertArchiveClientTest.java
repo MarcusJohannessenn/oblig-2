@@ -27,6 +27,21 @@ public class MembertArchiveClientTest {
         public void registerBonusPointsThatShouldReturnTrue(){
             assertTrue(mem.registerPoints(3,500));
         }
+
+        @Test
+        @DisplayName("Sjekker om Den er silver member, setter poeng til 30.000")
+        public void checkToSeIfMembershipEqualsSilver(){
+            //Ny member
+            BonusMember m = new BonusMember(9, LocalDate.now(),"Lisa","lisa@mail");
+            //lager et nytt memberarchive (Hashmap)
+            MemberArchive mem = new MemberArchive();
+            //legger member m til i arkivet
+            mem.addMember(m);
+            //registrerer 30.000 poeng (silver er grense over 25.000)
+            m.registerBonusPoints(30_000);
+            //Sjekker om type medlemskap er det samme som jeg forventer
+            assertEquals("Silver",m.getMembershipLevel());
+        }
     }
     @Nested
     class AssertFalse{

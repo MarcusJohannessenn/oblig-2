@@ -16,7 +16,7 @@ public class BonusMember {
     private String password;
     private final int SILVER_LIMIT;
     private final int GOLD_LIMIT;
-    private Membership membership;
+    private Membership membership; //Abstrakt klasse
 
     //Constructor if bonusPointBalance it not chosen
     public BonusMember(int memberNumber, LocalDate enrolledDate, String name, String emailAdress) {
@@ -70,8 +70,10 @@ public class BonusMember {
         else {
             membership = new GoldMembership();//og det økes med 30% eller 50% fikses i Goldmembership-klassen
             this.bonusPointBalance = membership.registrerPoints(bonusPointBalance, newPoints);
+            GoldMembership gold = new GoldMembership();
         }
     }
+
 
     public String getMembershipLevel(){
         //Overrider i Membership-klassen
@@ -87,6 +89,7 @@ public class BonusMember {
             membership = new GoldMembership();//og det økes med 30% eller 50% fikses i Goldmembership-klassen
             return membership.getMembershipName();
         }
+
     }
 
     //trenger ikke denne for navnet blir settet i subklassene

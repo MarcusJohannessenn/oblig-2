@@ -1,5 +1,7 @@
 package no.marcusjohannessen;
 
+//kan ikke nu opprette en dynamisk type
+//til et objekt av Membership fordi klassen er abstrakt
 public abstract class Membership {
     private String membershipName;
 
@@ -11,15 +13,17 @@ public abstract class Membership {
 
     public int registrerPoints(int bonusPointBalance, int newPoints){
         return bonusPointBalance + newPoints;
-
     }
 
     public String getMembershipName(){
         return membershipName;
     }
 
+
     @Override
     public String toString() {
         return membershipName;
     }
+
+
 }
