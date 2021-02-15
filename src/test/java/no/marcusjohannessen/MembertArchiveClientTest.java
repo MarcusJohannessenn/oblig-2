@@ -1,5 +1,6 @@
 package no.marcusjohannessen;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -9,6 +10,7 @@ import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MembertArchiveClientTest {
+
 
     @Nested
     class AsserterTrue{
