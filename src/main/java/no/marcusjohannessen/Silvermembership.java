@@ -12,7 +12,7 @@ public class Silvermembership extends Membership {
     @Override
     public int registrerPoints(int bonusPointBalance, int newPoints) {
         newPoints*= POINTS_SCALING_FACTORE;
-        return super.registrerPoints(bonusPointBalance, newPoints);
+        return Math.round(super.registrerPoints(bonusPointBalance, newPoints));
     }
 
     @Override

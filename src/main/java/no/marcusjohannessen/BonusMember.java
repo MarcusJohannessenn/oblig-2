@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 /**
  * @author marcusjohannessen
+ * @version 1.0
  *
  */
 
@@ -92,7 +93,11 @@ public class BonusMember {
 
     }
 
-    //trenger ikke denne for navnet blir settet i subklassene
+    /**
+     * Tenger ikke denne
+     * membership blir settet av seg selv
+     * avhengig av antall poeng
+     */
     private void checkAndSetMembership(){
 
     }

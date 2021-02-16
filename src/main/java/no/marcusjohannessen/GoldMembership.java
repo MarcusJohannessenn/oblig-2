@@ -18,8 +18,7 @@ public class GoldMembership extends Membership {
         }else{
             newPoints *= POINTS_SCALING_FACTOR_LEVEL_2;
         }
-
-        return super.registrerPoints(bonusPointBalance, newPoints);
+        return Math.round(super.registrerPoints(bonusPointBalance, newPoints));
     }
 
     @Override

@@ -24,6 +24,4 @@ public abstract class Membership {
     public String toString() {
         return membershipName;
     }
-
-
 }
